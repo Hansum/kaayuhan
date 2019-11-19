@@ -1,0 +1,7 @@
+- .gitignore file is a file that will not commit/add the file/extension in the github repository depending of the developer
+
+- eslint is much more for error handling
+
+- prettier is more on the format of the code rather than the process of the code
+
+- parcel is a bundler that helps the developer to get it ready for development evinronment and for production

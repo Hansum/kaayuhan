@@ -1,0 +1,16 @@
+{
+  "extends": ["eslint:recommended", "prettier", "prettier/react"], //extends is one of the rules of eslint
+  "plugins": [],
+  "parserOptions": {
+    "ecmaVersion": 2018, //we can use like async/await for this ecamversion
+    "sourceType": "module", //module means we can use import and export
+    "ecmaFeatures": {
+      "jsx": true //to understand jsx files
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true //to understand like http or require in node js
+  }
+}
