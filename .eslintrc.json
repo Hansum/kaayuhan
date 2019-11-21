@@ -1,6 +1,17 @@
 {
-  "extends": ["eslint:recommended", "prettier", "prettier/react"], //extends is one of the rules of eslint
-  "plugins": [],
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "prettier/react"
+  ], //extends is one of the rules of eslint
+  "rules": {
+    "react/prop-types": 0,
+    "no-console": 1
+  },
+  "plugins": ["react", "import", "jsx-a11y"],
   "parserOptions": {
     "ecmaVersion": 2018, //we can use like async/await for this ecamversion
     "sourceType": "module", //module means we can use import and export
@@ -12,5 +23,10 @@
     "es6": true,
     "browser": true,
     "node": true //to understand like http or require in node js
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
